@@ -45,7 +45,7 @@ def get_input(prompt, is_keyword=False, mute=False):
         if not mute:
             print(prompt)
         if is_keyword:
-            r.energy_threshold = 5000
+            r.energy_threshold = 4500
             r.adjust_for_ambient_noise(source, duration=0.5)
         audio = r.listen(source)
         try:
